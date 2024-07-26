@@ -105,7 +105,7 @@ main {
     margin-top: 6px;
 }
 
-.container p {
+.container .textContainer {
     color: hsl(215deg 13.64% 34.51%);
     margin-top: 18px;
     font-size: 14.5px;
@@ -125,6 +125,45 @@ main {
     width: 100%;
     height: 50px;
     font-size: 0.9rem;
+}
+
+.tooltip {
+    display: none;
+    opacity: 0;
+    gap: 5px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease;
+    border-radius: 3px;
+    width: 65%;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.tooltip span {
+    padding: 8px;
+    border-radius: 3px;
+    color: hsl(216.67deg 10.84% 67.45%);
+}
+
+.tooltip section {
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.tooltip section:hover {
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
 #input::placeholder {
