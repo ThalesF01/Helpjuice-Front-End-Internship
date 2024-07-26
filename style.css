@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, .links, .config {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+header {
+    justify-content: space-between;
+    padding: 10px;
+    height: 10vh;
+}
+
+a {
+    color: hsl(216.67deg 10.84% 67.45%);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+.links {
+    width: 30%;
+    justify-content: space-between;
+}
+
+.linkMain, .editing {
+    display: flex;
+    align-items: center;
+}
+
+.linkMain img, .editing img {
+    margin-right: 10px;
+}
+
+.config {
+    width: 17%;
+    justify-content: space-between;
+}
+
+.publishSpace {
+    display: flex;
+    align-items: center;
+    color: hsl(210.21deg 68.12% 40.59%);
+    font-weight: bold;
+}
+
+.publishSpace img {
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    background-color: red;
+    height: 90vh;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    height: 50%;
+    width: 50%;
+}
+
+.container p {
+    color: hsl(215deg 13.64% 34.51%);
+}
+
+#inputField {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#output h1 {
+    color: #333;
+}
